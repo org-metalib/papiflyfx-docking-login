@@ -1,0 +1,3 @@
+org.metalib.papifly.fx.login.idapi.providers.GenericOidcProvider
+org.metalib.papifly.fx.login.idapi.providers.GoogleProvider
+org.metalib.papifly.fx.login.idapi.providers.GitHubProvider

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.metalib.papifly.docking</groupId>
+        <artifactId>papiflyfx-docking-login-parent</artifactId>
+        <version>0.0.25-SNAPSHOT</version>
+    </parent>
+    <artifactId>papiflyfx-docking-login-session-api</artifactId>
+    <name>papiflyfx-docking-login-session-api</name>
+    <description>Session Management SPI and implementations for PapiflyFX docking login.</description>
+    <dependencies>
+        <dependency>
+            <groupId>org.metalib.papifly.docking</groupId>
+            <artifactId>papiflyfx-docking-login-idapi</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.metalib.papifly.docking</groupId>
+            <artifactId>papiflyfx-docking-settings-api</artifactId>
+            <version>${papiflyfx.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
