@@ -1,0 +1,33 @@
+name: Build Test
+
+run-name: ${{ github.actor }} is testing the project build
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches-ignore:
+      - main
+
+jobs:
+  build-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: configure git identity
+        run: |
+          git config --global user.email "${GIT_CONFIG_USER_EMAIL}"
+          git config --global user.name "${GIT_CONFIG_USER_NAME}"
+      - name: install java with maven
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '25.0.1'
+          java-package: 'jdk+fx'
+          cache: 'maven'
+      - name: run `mvn package` (headless)
+        run: |
+          ./mvnw -B -U --errors -Dsurefire.useFile=false -Djava.awt.headless=true -Dtestfx.headless=true package

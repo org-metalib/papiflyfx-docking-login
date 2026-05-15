@@ -4,9 +4,9 @@
     <parent>
         <groupId>org.metalib.papifly.docking</groupId>
         <artifactId>papiflyfx-build-parent</artifactId>
-        <version>0.0.25-SNAPSHOT</version>
-        <relativePath />
+        <version>0.0.25</version>
     </parent>
+    <version>0.0.25-SNAPSHOT</version>
     <artifactId>papiflyfx-docking-login-parent</artifactId>
     <packaging>pom</packaging>
     <name>papiflyfx-docking-login</name>
@@ -17,4 +17,10 @@
         <module>papiflyfx-docking-login-session-api</module>
         <module>papiflyfx-docking-login</module>
     </modules>
+    <scm>
+        <connection>scm:git:git://github.com/org-metalib/papiflyfx-docking-login.git</connection>
+        <developerConnection>scm:git:https://github.com/org-metalib/papiflyfx-docking-login.git</developerConnection>
+        <url>https://github.com/org-metalib/papiflyfx-docking-login</url>
+        <tag>HEAD</tag>
+    </scm>
 </project>
