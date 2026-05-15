@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.metalib.papifly.docking</groupId>
         <artifactId>papiflyfx-docking-login-parent</artifactId>
-        <version>0.0.25-SNAPSHOT</version>
+        <version>0.0.25</version>
     </parent>
     <artifactId>papiflyfx-docking-login</artifactId>
     <name>papiflyfx-docking-login</name>
@@ -23,12 +23,12 @@
         <dependency>
             <groupId>org.metalib.papifly.docking</groupId>
             <artifactId>papiflyfx-docking-api</artifactId>
-            <version>${papiflyfx.version}</version>
+            <version>0.0.25</version>
         </dependency>
         <dependency>
             <groupId>org.metalib.papifly.docking</groupId>
             <artifactId>papiflyfx-docking-settings-api</artifactId>
-            <version>${papiflyfx.version}</version>
+            <version>0.0.25</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -50,7 +50,7 @@
         <dependency>
             <groupId>org.metalib.papifly.docking</groupId>
             <artifactId>papiflyfx-docking-docks</artifactId>
-            <version>${papiflyfx.version}</version>
+            <version>0.0.25</version>
             <scope>test</scope>
         </dependency>
         <dependency>
