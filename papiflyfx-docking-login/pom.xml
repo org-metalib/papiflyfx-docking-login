@@ -23,12 +23,10 @@
         <dependency>
             <groupId>org.metalib.papifly.docking</groupId>
             <artifactId>papiflyfx-docking-api</artifactId>
-            <version>${papiflyfx.version}</version>
         </dependency>
         <dependency>
             <groupId>org.metalib.papifly.docking</groupId>
             <artifactId>papiflyfx-docking-settings-api</artifactId>
-            <version>${papiflyfx.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -50,7 +48,6 @@
         <dependency>
             <groupId>org.metalib.papifly.docking</groupId>
             <artifactId>papiflyfx-docking-docks</artifactId>
-            <version>${papiflyfx.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
